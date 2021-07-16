@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+{% for post in posts %}
+
+<p> {{ post.title }} {{ post.blog.blog_name }} {{ post.blog.user_blog.id }} </p>
+
+
+{% endfor %}
+
+{% endblock %}

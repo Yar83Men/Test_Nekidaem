@@ -1,0 +1,10 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+{% for user in users %}
+
+<p> <a href="{% url 'user_posts' user.id %}"> {{ user.user }} </a> </p>
+
+{% endfor %}
+
+{% endblock %}
